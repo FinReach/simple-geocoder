@@ -1,6 +1,6 @@
 # Ask::Geocoder
 
-TODO: Write a gem description
+Gem for geocoding creditors database with postal_codes
 
 ## Installation
 
@@ -17,8 +17,6 @@ Or install it yourself as:
     $ gem install ask-geocoder
 
 ## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
