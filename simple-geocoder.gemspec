@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ask/geocoder/version'
+require 'simple/geocoder/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ask-geocoder"
-  spec.version       = Ask::Geocoder::VERSION
+  spec.name          = "simple-geocoder"
+  spec.version       = Simple::Geocoder::VERSION
   spec.authors       = ["andrey.marchenko"]
   spec.email         = ["andrey.marchenko@finreach.de"]
   spec.summary       = %q{Gem for geocoding postal codes data}

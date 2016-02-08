@@ -1,4 +1,4 @@
-module Ask
+module Simple
   module Geocoder
     class Countries
 

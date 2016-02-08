@@ -1,16 +1,16 @@
-require "ask/geocoder/version"
-require "ask/geocoder/postal_codes"
-require "ask/geocoder/countries"
+require "simple/geocoder/version"
+require "simple/geocoder/postal_codes"
+require "simple/geocoder/countries"
 
-module Ask
+module Simple
   module Geocoder
 
     class Service
       attr_accessor :postal_codes, :countries
 
       def initialize
-        self.postal_codes = Ask::Geocoder::PostalCodes.new
-        self.countries = Ask::Geocoder::Countries.new
+        self.postal_codes = Simple::Geocoder::PostalCodes.new
+        self.countries = Simple::Geocoder::Countries.new
       end
 
       def geocode postal_code, country_code = nil
