@@ -1,6 +1,6 @@
 module Simple
   module Geocoder
-    class PostalCodes
+    class Germany
 
       attr_accessor :dict
 
@@ -10,11 +10,12 @@ module Simple
         File.readlines(path).each do |line|
           parts = line.strip.split(/\t+/)
           self.dict[parts[1].strip] = {lat: parts[-2].strip.to_f, lon: parts[-1].strip.to_f}
+          self.dict[parts[2].strip] = {lat: parts[-2].strip.to_f, lon: parts[-1].strip.to_f}
         end
       end
 
-      def geocode postal_code
-        self.dict[postal_code]
+      def geocode postal_code_or_city
+        self.dict[postal_code_or_city]
       end
 
     end
