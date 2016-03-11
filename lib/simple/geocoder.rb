@@ -1,5 +1,6 @@
 require "simple/geocoder/version"
 require "simple/geocoder/germany"
+require "simple/geocoder/austria"
 require "simple/geocoder/countries"
 
 module Simple
